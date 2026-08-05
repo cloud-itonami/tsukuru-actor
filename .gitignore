@@ -1,1 +1,5 @@
 .cpcache/
+node_modules/
+dist/
+.shadow-cljs/
+package-lock.json

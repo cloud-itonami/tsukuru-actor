@@ -1,0 +1,23 @@
+{
+  "name": "cloud-itonami-tsukuru",
+  "main": "dist/worker.js",
+  "compatibility_date": "2026-08-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true }
+  // NO D1 binding. ADR-2608039000 forbids D1 as a premise on any path that
+  // claims to be decentralised, and this actor's ref/head plane is
+  // kotobase.net through kotoba-lang/kotobase-client -- authorization,
+  // tenant isolation and replay protection are the service's, not this
+  // Worker's.
+  //
+  // Secrets (set with `wrangler secret put`), never placed here:
+  //   KOTOBASE_SECRET_KEY  the marketplace actors' shared Ed25519 seed
+  //                        (base64, 32 bytes). :apex requires the graph
+  //                        scope to equal the issuer DID and the eight
+  //                        actors share one graph, so they share one key.
+  //                        Per-actor attribution does not depend on it:
+  //                        persist/stream-ctx scopes every ledger by actor
+  //                        name inside the shared ref.
+  //   ACTOR_WRITE_TOKEN    gates every POST and the two ledger reads.
+  //                        Catalog reads are open.
+}

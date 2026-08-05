@@ -1,8 +1,23 @@
 {:paths ["src" "."]
+ ;; ADR-2800003200 Phase 2: tsukuru joins the seven marketplace actors on
+ ;; ONE kotobase ref. `marketplace` carries the shared contracts and, in
+ ;; `marketplace.edge` (a .cljs file the JVM suite never loads), the host
+ ;; half every actor's Worker calls. Pinned by git coordinate, not
+ ;; :local/root -- CI checks out this repo alone, so a sibling path never
+ ;; resolves there.
+ :deps {io.github.kotoba-lang/marketplace
+        {:git/url "https://github.com/kotoba-lang/marketplace.git"
+         :git/sha "7ed9642f924f3cd01aa670d48d6cf56215d1b132"}}
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner
                       {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
          :main-opts ["-m" "cognitect.test-runner"]}
+  ;; What `shadow-cljs.edn` resolves for the Worker build. Separate from
+  ;; :test on purpose: that alias carries :main-opts for the JVM
+  ;; test-runner, and shadow-cljs passes the alias through to `clojure -A`
+  ;; where those opts are handed to the wrong main.
+  :cljs {:extra-deps {org.clojure/clojurescript {:mvn/version "1.11.132"}
+                      thheller/shadow-cljs {:mvn/version "2.28.20"}}}
   :lint {:replace-deps {clj-kondo/clj-kondo {:mvn/version "2024.11.14"}}
          :main-opts    ["-m" "clj-kondo.main" "--lint" "src" "test" "--fail-level" "error"]}}}

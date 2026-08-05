@@ -1,0 +1,10 @@
+;; tsukuru 作's Worker build. :esm, the same shape as the seven
+;; cloud-itonami-marketplace-* actors it now shares a ref with
+;; (ADR-2800003200 Phase 2).
+{:deps {:aliases [:cljs]}
+ :builds
+ {:worker
+  {:target :esm
+   :output-dir "dist"
+   :modules {:worker {:exports {default tsukuru.edge.worker/app}}}
+   :compiler-options {:output-feature-set :es2020 :infer-externs :auto}}}}
