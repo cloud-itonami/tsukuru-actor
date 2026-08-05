@@ -7,7 +7,14 @@
  ;; resolves there.
  :deps {io.github.kotoba-lang/marketplace
         {:git/url "https://github.com/kotoba-lang/marketplace.git"
-         :git/sha "7ed9642f924f3cd01aa670d48d6cf56215d1b132"}}
+         :git/sha "7ed9642f924f3cd01aa670d48d6cf56215d1b132"}
+        ;; ADR-2800003200 Phase 3: the CAE solver CONTRACT + its V&V
+        ;; qualification gate. tsukuru calls `cae.solver/solve` and
+        ;; `cae.vv/qualification-gate`; it registers no method and adds no
+        ;; physics of its own.
+        io.github.kotoba-lang/kami-engine-cae-solver
+        {:git/url "https://github.com/kotoba-lang/kami-engine-cae-solver.git"
+         :git/sha "42afc0c52d73d42db52f5a0fe733299db7fe144b"}}
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner

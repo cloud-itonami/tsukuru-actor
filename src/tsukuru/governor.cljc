@@ -55,9 +55,18 @@
                               `passed`**, so an unwired screening
                               integration fails closed.
 
-  ## Three ESCALATE (soft) gates
+  ## Four ESCALATE (soft) gates
 
     - Confidence below the floor.
+    - A declared engineering case that does not QUALIFY
+      (ADR-2800003200 Phase 3). `tsukuru.manufacturability` runs the
+      order's own CAE case through `kami-engine-cae-solver` and its V&V
+      qualification gate; missing V&V evidence is `:not-qualified` by
+      construction. This gate is advisory in ONE direction only — a
+      not-qualified case stops the order and asks a person, and a
+      qualified one is not a reason to dispatch and lowers none of the
+      hard checks. An order that declared no case is not assessed and
+      not penalised: the absence of a claim is not a failed claim.
     - Creating a production order WITHOUT a member-signed consent
       reference (G1). This is the load-bearing one: committing a member
       to a manufacturing order is exactly the move that must not happen
@@ -70,6 +79,7 @@
   the advisor is free to propose anything, and nothing it proposes
   reaches the ref without passing this."
   (:require [clojure.string :as str]
+            [tsukuru.manufacturability :as mfg]
             [tsukuru.store :as store]))
 
 (def confidence-floor 0.6)
@@ -206,17 +216,32 @@
 
                (= :record-progress op)
                (into (compliance-violations st (:po-id request))))
-        ;; Consent (G1) and a failed inspection are the two moves that must
-        ;; not commit on a machine's say-so.
+        ;; ADR-2800003200 Phase 3. ADVISORY, and only in one direction: an
+        ;; order whose own declared physics case does not qualify is a
+        ;; reason to stop and ask a person, while a qualified one is NOT a
+        ;; reason to proceed and lowers nothing below. An order that
+        ;; declared no case is not assessed and not penalised — the absence
+        ;; of a claim is not a failed claim.
+        mfg-assessment (when (= :record-progress op)
+                         (mfg/assess (store/production-order-record st (:po-id request))))
+        mfg-blocked? (boolean (and mfg-assessment
+                                   (:declared? mfg-assessment)
+                                   (not (:qualified? mfg-assessment))))
+        ;; Consent (G1), a failed inspection, and a declared-but-unqualified
+        ;; engineering case are the three moves that must not commit on a
+        ;; machine's say-so.
         high-stakes? (boolean (or (and (= :create-production-order op)
                                        (str/blank? (str (:consent-ref request))))
                                   (and (= :record-qc op)
-                                       (= "fail" (:qc-result request)))))]
-    {:violations hard
-     :hard? (boolean (seq hard))
-     :high-stakes? high-stakes?
-     :escalate? (or high-stakes? (< confidence confidence-floor))
-     :confidence confidence}))
+                                       (= "fail" (:qc-result request)))
+                                  mfg-blocked?))]
+    (cond-> {:violations hard
+             :hard? (boolean (seq hard))
+             :high-stakes? high-stakes?
+             :escalate? (or high-stakes? (< confidence confidence-floor))
+             :confidence confidence}
+      mfg-assessment (assoc :manufacturability mfg-assessment)
+      mfg-blocked? (assoc :escalation-reason :manufacturability-not-qualified))))
 
 (defn hold-fact
   "What goes on the ledger when the governor refuses.

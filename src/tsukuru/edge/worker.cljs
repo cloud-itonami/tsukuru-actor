@@ -34,6 +34,7 @@
             [tsukuru.advisor :as advisor]
             [tsukuru.governor :as governor]
             [tsukuru.kotoba.agent :as agent]
+            [tsukuru.manufacturability :as mfg]
             [tsukuru.phase :as phase]
             [tsukuru.store :as store]))
 
@@ -129,10 +130,23 @@
     (and (= method "POST") (= path "/progress"))
     (gated request env
            (fn [b]
-             (let [po (get b "po-id")]
-               (run client {:production-order [po] :progress [po]} b
-                    {:op :record-progress :ref po :po-id po
-                     :stage (get b "stage") :note (get b "note")}))))
+             (let [po (get b "po-id")
+                   req {:op :record-progress :ref po :po-id po
+                        :stage (get b "stage") :note (get b "note")}]
+               (edge/with-store
+                 {:client client :wants {:production-order [po] :progress [po]}
+                  :store-fn store/kotobase-store}
+                 (fn [st]
+                   ;; The manufacturability assessment goes on the ledger on
+                   ;; EVERY path, including "never assessed" — an order that
+                   ;; nobody checked and one that passed must not read the
+                   ;; same six months later (ADR-2800003200 Phase 3). The
+                   ;; governor decides what to DO about it; this only makes
+                   ;; sure the decision is legible afterwards.
+                   (store/append-ledger!
+                    st (assoc (mfg/gate-fact (store/production-order-record st po))
+                              :ref po :op :record-progress :actor "tsukuru-edge"))
+                   (edge/outcome po (edge/run ops st (ctx b) req)))))))
 
     (and (= method "POST") (= path "/qc"))
     (gated request env
