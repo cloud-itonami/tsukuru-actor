@@ -46,7 +46,7 @@
     qc                 the latest inspection verdict per production order.
 
   The ledger stays append-only."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [marketplace.persist :as persist]))
 
 (defprotocol Store

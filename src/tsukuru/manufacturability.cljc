@@ -47,7 +47,7 @@
   (:require [cae.industrial]                                ;; registers :cfd/:fem/... methods
             [cae.solver :as cae]
             [cae.vv :as vv]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def supported-kinds
   "The deterministic backends this gate will dispatch to. Deliberately the
