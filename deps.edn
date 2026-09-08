@@ -5,7 +5,12 @@
  ;; half every actor's Worker calls. Pinned by git coordinate, not
  ;; :local/root -- CI checks out this repo alone, so a sibling path never
  ;; resolves there.
- :deps {io.github.kotoba-lang/marketplace
+ :deps {
+        ;; kotoba.lang.text, not clojure.string. Pinned as an explicit floor:
+        ;; tools.deps takes the NEWEST sha it is shown, so without a floor here
+        ;; this repo silently rides whatever a sibling happens to name.
+        io.github.kotoba-lang/text {:git/sha "73bdb13ae7a3d004b44bca08be03a3191157a38f"}
+       io.github.kotoba-lang/marketplace
         {:git/url "https://github.com/kotoba-lang/marketplace.git"
          :git/sha "7ed9642f924f3cd01aa670d48d6cf56215d1b132"}
         ;; ADR-2800003200 Phase 3: the CAE solver CONTRACT + its V&V

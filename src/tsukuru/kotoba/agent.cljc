@@ -18,7 +18,7 @@
   :factory/* EDN entity (kotoba/seed.edn's 3-entry demo, or the broader illustrative real-company
   kotoba/manufacturer-registry-seed.edn) into the plain string-keyed shape handle-discover/
   capability-match already expect — no change to the matching logic itself."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.set :as set]))
 
 (def TITHE-BPS 1000)
@@ -28,7 +28,7 @@
 (defn- tokens
   "Split on any non-alphanumeric into lowercase tokens ('cnc-5axis' → {cnc, 5axis})."
   [s]
-  (set (re-seq #"[a-z0-9]+" (str/lower-case s))))
+  (set (re-seq #"[a-z0-9]+" (str/lower s))))
 
 (defn- capability-match
   "Token-overlap capability scoring (a capability counts if any token appears in the spec)."

@@ -78,7 +78,7 @@
   A refusal here is not a bug report about the advisor. It is the design:
   the advisor is free to propose anything, and nothing it proposes
   reaches the ref without passing this."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [tsukuru.manufacturability :as mfg]
             [tsukuru.store :as store]))
 
@@ -106,8 +106,8 @@
   goods shipped is asking the ledger to record something nobody observed."
   [request]
   (boolean (or (:shipped? request)
-               (some-> (:stage request) str/lower-case #{"shipped" "delivered"})
-               (some-> (:claim request) str/lower-case
+               (some-> (:stage request) str/lower #{"shipped" "delivered"})
+               (some-> (:claim request) str/lower
                        (as-> s (some #(str/includes? s %) ["already shipped" "already delivered"
                                                            "manufactured and shipped"]))))))
 

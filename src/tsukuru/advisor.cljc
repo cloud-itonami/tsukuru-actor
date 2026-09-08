@@ -35,7 +35,7 @@
   judgement: it says marketplace buyer-hood is the SBT for this purpose.
   If the two ever need to differ, this is the line to change, and the
   governor's `:buyer-not-principal` check is unaffected either way."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [tsukuru.kotoba.agent :as agent]
             [tsukuru.store :as store]))
 
@@ -54,9 +54,9 @@
     (let [state {"spec" spec "factories" [(agent/factory-datom->state factory)]}
           cands (get (agent/handle-discover state) "candidates" [])
           caps (get (first cands) "capabilities" [])
-          spec-l (str/lower-case (str spec))
+          spec-l (str/lower (str spec))
           hit? (some (fn [c] (some #(str/includes? spec-l %)
-                                   (re-seq #"[a-z0-9]+" (str/lower-case (str c)))))
+                                   (re-seq #"[a-z0-9]+" (str/lower (str c)))))
                      caps)]
       (if hit? confidence-ceiling confidence-unmatched))))
 

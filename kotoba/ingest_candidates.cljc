@@ -17,7 +17,7 @@
   "tsukuru 作る — candidates.edn ingest scaffold, isolated candidate graph.
   ADR-2605202800. Sibling of ingest_mcp.cljc (member seed) — deliberately NOT unified
   with it, so the member-graph default can never accidentally receive candidate rows."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (def default-url   "http://127.0.0.1:8077")
