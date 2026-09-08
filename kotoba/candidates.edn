@@ -764,6 +764,22 @@
 ;; soda-ash chemicals subsidiary); Irving Oil Limited (Canada, C19, the parent/HQ)
 ;; alongside the existing Irving Oil Whitegate Refinery entry (Ireland subsidiary).
 ;; Running total: 2119 companies / 106 countries / 23 ISIC divisions, zero duplicate DIDs.
+;; Batch 58 (/loop pass 58): +16 companies, +2 new countries (MZ Mozambique, CR Costa
+;; Rica). Per the header's depth-first guidance, the depth half is the bulk: JP Komatsu
+;; (construction/mining machinery, C28) and Denso (automotive components, C29); DE
+;; Covestro and Wacker Chemie (polyurethane/polycarbonate and specialty chemicals, C20);
+;; CN Haier (home appliances, C31) and Chery (automobiles, C29); US Corning (glass/
+;; ceramics/optical, C23), Lockheed Martin (aerospace/defense, C30) and Deere & Company
+;; (agricultural machinery, C28); IN Hero MotoCorp (motorcycles, C29) and Titan Company
+;; (jewellery/watches, C32); IT Brembo (braking systems, C29), Ferrero (confectionery,
+;; C10) and Barilla (pasta, C10). Country-gap half kept deliberately small per the
+;; header's own warning against chasing ever-smaller gaps, and limited to two genuinely
+;; un-covered countries with real, well-documented primary manufacturers: Mozal
+;; (Mozambique, aluminium smelter, C24) and Florida Ice and Farm Company (Costa Rica,
+;; beverages, C11). All 16 are company or Wikipedia pages fetched in this run (all
+;; returned HTTP 200); no C33-pure-MRO candidate, and no sensitive/combat-vessel
+;; exclusion needed. 2119 -> 2135 companies, 106 -> 108 countries, 23 ISIC divisions.
+;; Running total: 2135 companies / 108 countries / 23 ISIC divisions, zero duplicate DIDs.
 
 [;; ════════════ Japan — precision machining / robotics / electronics (C25/C26/C28) ════════════
  {:factory/did "candidate:manufacturer-directory/jp/fanuc-corporation"
@@ -14241,4 +14257,125 @@
   :factory/isic "C20"
   :factory/capabilities ["polyethylene-production" "ethylene-cracking" "petrochemical-manufacturing" "plastic-resins"]
   :factory/source-url "https://www.novachem.com/locations/joffre-ab-canada/"
-  :factory/labor-provenance :unknown :factory/sourcing :public-directory}]
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ ;; ════════════ Japan — construction/mining machinery, automotive components (C28/C29) ════════════
+ {:factory/did "candidate:manufacturer-directory/jp/komatsu-limited"
+  :factory/display-name "Komatsu Ltd."
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities ["construction-machinery" "mining-equipment" "hydraulic-excavators" "bulldozers" "diesel-engines"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Komatsu_Limited"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/denso"
+  :factory/display-name "Denso Corporation"
+  :factory/country "JP"
+  :factory/isic "C29"
+  :factory/capabilities ["automotive-electronic-components" "engine-management-systems" "air-conditioning-systems" "starter-motors" "heat-exchangers"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Denso"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ ;; ════════════ Germany — industrial & specialty chemicals (C20) ════════════
+ {:factory/did "candidate:manufacturer-directory/de/covestro"
+  :factory/display-name "Covestro AG"
+  :factory/country "DE"
+  :factory/isic "C20"
+  :factory/capabilities ["polyurethane-production" "polycarbonate-production" "isocyanates" "thermoplastic-polyurethane" "chemical-raw-materials"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Covestro"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/wacker-chemie"
+  :factory/display-name "Wacker Chemie AG"
+  :factory/country "DE"
+  :factory/isic "C20"
+  :factory/capabilities ["silicones" "polysilicon" "specialty-chemicals" "polymer-chemistry" "organosilanes"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Wacker_Chemie"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ ;; ════════════ China — home appliances, automobiles (C29/C31) ════════════
+ {:factory/did "candidate:manufacturer-directory/cn/haier"
+  :factory/display-name "Haier Group Corporation"
+  :factory/country "CN"
+  :factory/isic "C31"
+  :factory/capabilities ["refrigerators" "washing-machines" "air-conditioners" "home-appliance-manufacturing" "consumer-electronics"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Haier"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/chery-automobile"
+  :factory/display-name "Chery Automobile Co., Ltd."
+  :factory/country "CN"
+  :factory/isic "C29"
+  :factory/capabilities ["passenger-vehicles" "compact-cars" "electric-vehicles" "automobile-assembly" "sedans-and-suvs"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Chery"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ ;; ════════════ USA — glass/ceramics, aerospace, agricultural machinery (C23/C28/C30) ════════════
+ {:factory/did "candidate:manufacturer-directory/us/corning-incorporated"
+  :factory/display-name "Corning Incorporated"
+  :factory/country "US"
+  :factory/isic "C23"
+  :factory/capabilities ["glass-manufacturing" "optical-fiber" "ceramics" "specialty-glass" "scientific-glassware"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Corning_Inc."
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/lockheed-martin"
+  :factory/display-name "Lockheed Martin Corporation"
+  :factory/country "US"
+  :factory/isic "C30"
+  :factory/capabilities ["aircraft-manufacturing" "military-aerospace" "missile-systems" "space-systems" "defense-electronics"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Lockheed_Martin"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/john-deere"
+  :factory/display-name "Deere & Company (John Deere)"
+  :factory/country "US"
+  :factory/isic "C28"
+  :factory/capabilities ["agricultural-machinery" "tractors" "harvesting-equipment" "lawn-care-equipment" "heavy-equipment"]
+  :factory/source-url "https://en.wikipedia.org/wiki/John_Deere"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ ;; ════════════ India — motorcycles, jewellery & watches (C29/C32) ════════════
+ {:factory/did "candidate:manufacturer-directory/in/hero-motocorp"
+  :factory/display-name "Hero MotoCorp Limited"
+  :factory/country "IN"
+  :factory/isic "C29"
+  :factory/capabilities ["motorcycles" "scooters" "two-wheeler-manufacturing" "commuter-bikes"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Hero_MotoCorp"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/titan-company"
+  :factory/display-name "Titan Company Limited"
+  :factory/country "IN"
+  :factory/isic "C32"
+  :factory/capabilities ["jewellery-manufacturing" "watches" "eyewear" "fashion-accessories"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Titan_Company"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ ;; ════════════ Italy — braking systems, confectionery, pasta (C10/C29) ════════════
+ {:factory/did "candidate:manufacturer-directory/it/brembo"
+  :factory/display-name "Brembo N.V."
+  :factory/country "IT"
+  :factory/isic "C29"
+  :factory/capabilities ["braking-systems" "disc-brakes" "automotive-parts" "high-performance-braking"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Brembo"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/it/ferrero"
+  :factory/display-name "Ferrero SpA"
+  :factory/country "IT"
+  :factory/isic "C10"
+  :factory/capabilities ["chocolate-manufacturing" "confectionery" "hazelnut-products" "spreads-and-pralines"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Ferrero_SpA"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/it/barilla"
+  :factory/display-name "Barilla Group"
+  :factory/country "IT"
+  :factory/isic "C10"
+  :factory/capabilities ["pasta-manufacturing" "sauces" "baked-goods" "food-processing"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Barilla_(company)"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ ;; ════════════ Mozambique — aluminium smelting (C24) ════════════
+ {:factory/did "candidate:manufacturer-directory/mz/mozal"
+  :factory/display-name "Mozal (Mozambique Aluminium Smelter)"
+  :factory/country "MZ"
+  :factory/isic "C24"
+  :factory/capabilities ["aluminium-smelting" "primary-aluminium" "metal-casting" "export-aluminium"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Mozal"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ ;; ════════════ Costa Rica — beverages (C11) ════════════
+ {:factory/did "candidate:manufacturer-directory/cr/florida-ice-and-farm-company"
+  :factory/display-name "Florida Ice and Farm Company (FIFCO)"
+  :factory/country "CR"
+  :factory/isic "C11"
+  :factory/capabilities ["beverage-manufacturing" "beer-brewing" "soft-drinks" "juices" "bottling"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Florida_Ice_and_Farm_Company"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+]
