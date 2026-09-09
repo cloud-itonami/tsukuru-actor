@@ -14378,4 +14378,239 @@
   :factory/capabilities ["beverage-manufacturing" "beer-brewing" "soft-drinks" "juices" "bottling"]
   :factory/source-url "https://en.wikipedia.org/wiki/Florida_Ice_and_Farm_Company"
   :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+ {:factory/did "candidate:manufacturer-directory/jp/shimadzu-corporation"
+  :factory/display-name "Shimadzu Corporation"
+  :factory/country "JP"
+  :factory/isic "C26"
+  :factory/capabilities ["precision-instruments" "measuring-instruments" "medical-equipment" "aircraft-instruments" "chromatographs"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Shimadzu_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/ihi-corporation"
+  :factory/display-name "IHI Corporation"
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities ["aero-engines" "space-launch-vehicles" "turbochargers" "marine-engines" "steel-structures"]
+  :factory/source-url "https://en.wikipedia.org/wiki/IHI_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/nsk-limited"
+  :factory/display-name "NSK Ltd."
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities ["industrial-bearings" "automotive-bearings" "precision-machinery-parts" "linear-motion-products"]
+  :factory/source-url "https://en.wikipedia.org/wiki/NSK_(company)"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/kubota-corporation"
+  :factory/display-name "Kubota Corporation"
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities ["agricultural-machinery" "tractors" "rice-transplanters" "engines" "construction-machinery"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Kubota"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/ebara-corporation"
+  :factory/display-name "Ebara Corporation"
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities ["pumps" "industrial-machinery" "environmental-machinery" "turbomachinery"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Ebara_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/sartorius-ag"
+  :factory/display-name "Sartorius AG"
+  :factory/country "DE"
+  :factory/isic "C26"
+  :factory/capabilities ["laboratory-equipment" "bioprocess-equipment" "lab-filtration" "weighing-technology" "pharmaceutical-production-equipment"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Sartorius_AG"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/kion-group"
+  :factory/display-name "KION Group"
+  :factory/country "DE"
+  :factory/isic "C28"
+  :factory/capabilities ["forklift-trucks" "warehouse-automation" "materials-handling-equipment" "supply-chain-solutions"]
+  :factory/source-url "https://en.wikipedia.org/wiki/KION_Group"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/mtu-aero-engines"
+  :factory/display-name "MTU Aero Engines AG"
+  :factory/country "DE"
+  :factory/isic "C30"
+  :factory/capabilities ["aircraft-engines" "engine-components" "gas-turbines" "mro-services"]
+  :factory/source-url "https://en.wikipedia.org/wiki/MTU_Aero_Engines"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/knauf-group"
+  :factory/display-name "Knauf Group"
+  :factory/country "DE"
+  :factory/isic "C23"
+  :factory/capabilities ["building-materials" "gypsum-plasterboard" "drywall" "insulation"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Knauf"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/semiconductor-manufacturing-international"
+  :factory/display-name "Semiconductor Manufacturing International Corporation (SMIC)"
+  :factory/country "CN"
+  :factory/isic "C26"
+  :factory/capabilities ["semiconductor-foundry" "wafer-fabrication" "ic-manufacturing" "advanced-node-logic"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Semiconductor_Manufacturing_International_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/hikvision-digital-technology"
+  :factory/display-name "Hangzhou Hikvision Digital Technology Co., Ltd."
+  :factory/country "CN"
+  :factory/isic "C26"
+  :factory/capabilities ["video-surveillance-equipment" "cctv-cameras" "network-cameras" "video-management-systems"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Hikvision"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/wanhua-chemical-group"
+  :factory/display-name "Wanhua Chemical Group Co., Ltd."
+  :factory/country "CN"
+  :factory/isic "C20"
+  :factory/capabilities ["mdi-production" "polyurethane-raw-materials" "isocyanates" "specialty-chemicals"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Wanhua_Chemical_Group"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/envision-energy"
+  :factory/display-name "Envision Energy"
+  :factory/country "CN"
+  :factory/isic "C28"
+  :factory/capabilities ["wind-turbines" "energy-management-software" "smart-turbine-manufacturing" "battery-storage"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Envision_Energy"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/hesai-technology"
+  :factory/display-name "Hesai Technology (Hesai Group)"
+  :factory/country "CN"
+  :factory/isic "C26"
+  :factory/capabilities ["lidar-sensors" "lidar-products" "sensor-manufacturing"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Hesai_Group"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/muyuan-foodstuff"
+  :factory/display-name "Muyuan Foodstuff Co., Ltd."
+  :factory/country "CN"
+  :factory/isic "C10"
+  :factory/capabilities ["pork-production" "pig-farming" "meat-processing"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Muyuan_Foodstuff"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/honeywell-international"
+  :factory/display-name "Honeywell International Inc."
+  :factory/country "US"
+  :factory/isic "C28"
+  :factory/capabilities ["aerospace-products" "electronic-guidance-systems" "cockpit-instrumentation" "building-automation" "process-controls"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Honeywell"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/ametek-incorporated"
+  :factory/display-name "AMETEK, Inc."
+  :factory/country "US"
+  :factory/isic "C26"
+  :factory/capabilities ["electronic-instruments" "electromechanical-devices" "precision-instruments" "specialty-materials"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Ametek"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/nordson-corporation"
+  :factory/display-name "Nordson Corporation"
+  :factory/country "US"
+  :factory/isic "C28"
+  :factory/capabilities ["adhesive-dispensing-equipment" "sealant-dispensing" "coating-equipment" "precision-dispensing"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Nordson_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/graco-incorporated"
+  :factory/display-name "Graco Inc."
+  :factory/country "US"
+  :factory/isic "C28"
+  :factory/capabilities ["fluid-handling-systems" "spray-equipment" "lubrication-equipment" "paint-pumps"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Graco_(fluid_handling)"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/ecolab-incorporated"
+  :factory/display-name "Ecolab Inc."
+  :factory/country "US"
+  :factory/isic "C20"
+  :factory/capabilities ["water-treatment-chemicals" "sanitation-products" "hygiene-products" "industrial-cleaning-chemicals"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Ecolab"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/sealed-air-corporation"
+  :factory/display-name "Sealed Air Corporation"
+  :factory/country "US"
+  :factory/isic "C22"
+  :factory/capabilities ["protective-packaging" "cushioning-packaging" "cryovac-food-packaging" "packaging-films"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Sealed_Air"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/mohawk-industries"
+  :factory/display-name "Mohawk Industries, Inc."
+  :factory/country "US"
+  :factory/isic "C31"
+  :factory/capabilities ["flooring-manufacturing" "carpet" "ceramic-tile" "laminate-flooring"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Mohawk_Industries"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/church-and-dwight"
+  :factory/display-name "Church & Dwight Co., Inc."
+  :factory/country "US"
+  :factory/isic "C20"
+  :factory/capabilities ["household-products" "personal-care-products" "specialty-chemicals"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Church_%26_Dwight"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/jsw-steel-limited"
+  :factory/display-name "JSW Steel Limited"
+  :factory/country "IN"
+  :factory/isic "C24"
+  :factory/capabilities ["steel-production" "hot-rolled-steel" "cold-rolled-steel" "steel-products"]
+  :factory/source-url "https://en.wikipedia.org/wiki/JSW_Steel"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/ashok-leyland"
+  :factory/display-name "Ashok Leyland"
+  :factory/country "IN"
+  :factory/isic "C29"
+  :factory/capabilities ["commercial-vehicles" "trucks" "buses" "powertrain-components"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Ashok_Leyland"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/dabur-india"
+  :factory/display-name "Dabur India Limited"
+  :factory/country "IN"
+  :factory/isic "C10"
+  :factory/capabilities ["ayurvedic-products" "consumer-goods-manufacturing" "personal-care-products" "food-products"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Dabur"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/marico-limited"
+  :factory/display-name "Marico Limited"
+  :factory/country "IN"
+  :factory/isic "C10"
+  :factory/capabilities ["edible-oils" "consumer-goods-manufacturing" "personal-care-products" "food-products"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Marico"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/it/campari-group"
+  :factory/display-name "Campari Group (Davide Campari-Milano N.V.)"
+  :factory/country "IT"
+  :factory/isic "C11"
+  :factory/capabilities ["spirits-production" "aperitifs" "liqueurs" "beverage-bottling"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Campari_Group"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/it/interpump-group"
+  :factory/display-name "Interpump Group S.p.A."
+  :factory/country "IT"
+  :factory/isic "C28"
+  :factory/capabilities ["high-pressure-plunger-pumps" "water-jetting-systems" "hydraulics" "fluid-conveyance-components"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Interpump_Group"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/it/delonghi"
+  :factory/display-name "De' Longhi S.p.A."
+  :factory/country "IT"
+  :factory/isic "C27"
+  :factory/capabilities ["small-appliances" "espresso-machines" "portable-heaters" "air-conditioners"]
+  :factory/source-url "https://en.wikipedia.org/wiki/De%27_Longhi"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/it/ariston-holding"
+  :factory/display-name "Ariston Holding N.V."
+  :factory/country "IT"
+  :factory/isic "C28"
+  :factory/capabilities ["water-heaters" "boilers" "space-heating" "burners"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Ariston_Thermo"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+;; Batch 59 (/loop pass 59): +31 companies, +0 new countries. Deep pass on the six
+;; largest economies per the header's default-to-economy-depth guidance: JP +5
+;; (precision/medical instruments, aero-engines/space, bearings, agri-machinery, pumps —
+;; all industries not previously covered for JP), DE +4 (lab/bioprocess equipment,
+;; materials-handling/forklifts, aircraft engines, gypsum building materials), CN +6
+;; (semiconductor foundry, video surveillance, MDI/polyurethanes, wind turbines, lidar
+;; sensors, pork production — first CN food entry beyond beverages/tobacco), US +7
+;; (aerospace/industrial conglomerate, electronic instruments, adhesive-dispensing and
+;; fluid-handling equipment, water/hygiene chemicals, protective packaging, flooring,
+;; consumer household products), IN +4 (flat steel, commercial vehicles, ayurvedic
+;; consumer goods, edible oils/personal care), IT +5 (spirits, high-pressure pumps,
+;; small appliances, thermal comfort, plus Campari for C11 depth). All 31 are real
+;; companies with Wikipedia pages fetched in this run (all returned HTTP 200); no
+;; C33-pure-MRO candidates and no sensitive/combat-vessel exclusions needed. 2135 ->
+;; 2166 companies, 108 countries, 23 ISIC divisions.
+;; Running total: 2166 companies / 108 countries / 23 ISIC divisions, zero duplicate DIDs.
 ]
