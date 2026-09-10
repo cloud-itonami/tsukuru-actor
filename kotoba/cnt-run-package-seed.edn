@@ -1,6 +1,6 @@
 ;; tsukuru 作 — CNT run-package seed (kotoba-native, R0). A small worked example — same
 ;; framing as kotoba/seed.edn: a genuine (not fabricated) CNT run-package that reaches
-;; "ready" under `(agent/validate-run-package "cnt" seed)` (src/tsukuru/kotoba/agent.cljc):
+;; "ready" under `(agent/validate-run-package "cnt" seed)` (src/tsukuru/kotoba/agent.kotoba):
 ;; all 6 catalog steps present (kotoba/cnt-process-catalog.edn), closed-loop steps with
 ;; telemetry + EHS interlocks bound, releasePlan carrying all 4 numeric targets, and all 3
 ;; required approval roles DID-signed. String-keyed (not keyword-keyed like schema.edn/lex/

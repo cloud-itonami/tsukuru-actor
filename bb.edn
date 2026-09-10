@@ -1,4 +1,4 @@
 {:paths ["src" "test" "."]
  :tasks
  {:test {:doc "Run the standalone actor tests"
-         :task (load-file "run_tests.clj")}}}
+         :task (load-file "run_tests.kotoba")}}}

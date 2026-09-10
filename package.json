@@ -1,7 +1,7 @@
 {
   "name": "cloud-itonami-tsukuru",
   "private": true,
-  "comment": "shadow-cljs compiles src/tsukuru/edge/worker.cljs -> dist/worker.js, the kotobase.net host for the tsukuru factory-direct ordering actor.",
+  "comment": "shadow-cljs compiles src/tsukuru/edge/worker.kotoba -> dist/worker.js, the kotobase.net host for the tsukuru factory-direct ordering actor.",
   "scripts": {
     "build": "shadow-cljs release worker",
     "deploy": "npm run build && wrangler deploy"

@@ -90,7 +90,7 @@ and embedded-carbon context into the CNT flow.
 the shape match") and bare lexicons for EUV (no run-package/run-validation schema at all).
 Neither vertical had any **executable business-rule** validation until `validate-run-package`
 (`[vertical run-package]`, `vertical` = `"cnt"` | `"euv"`) was added to
-`src/tsukuru/kotoba/agent.cljc`, following the same honest-stub / curated-table idiom as
+`src/tsukuru/kotoba/agent.kotoba`, following the same honest-stub / curated-table idiom as
 `classify-product`/`screen-export-control`. It returns a run-validation-shaped result
 (`"schema"`/`"runId"`/`"status"`/`"blockers"`/`"warnings"`/`"checks"`/`"dryRun"`, matching
 `com.etzhayyim.apps.tsukuru.cnt.validateRunPackage`'s output shape) and checks real rules —

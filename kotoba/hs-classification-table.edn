@@ -1,6 +1,6 @@
 ;; tsukuru 作 — curated heuristic HS (Harmonized System) chapter/heading classification
 ;; table. Documented/reviewable data source for `classify-product` in
-;; src/tsukuru/kotoba/agent.cljc — the .cljc embeds this same data as a Clojure literal
+;; src/tsukuru/kotoba/agent.kotoba — the .cljc embeds this same data as a Clojure literal
 ;; (HS-CLASSIFICATION-TABLE) so the actor stays IO-free / portable to cljs+WASM (no
 ;; runtime file read, no new deps). Keep the two in sync by hand when editing either one.
 ;;

@@ -5,12 +5,12 @@
  :canonical/format :edn
  :wire/root "wire"
  :migrated
- {:actor-source ["src/tsukuru/kotoba/agent.cljc"
-                 "src/tsukuru/murakumo.cljc"]
+ {:actor-source ["src/tsukuru/kotoba/agent.kotoba"
+                 "src/tsukuru/murakumo.kotoba"]
   :contracts "contracts"
   :external-contracts "wire"
-  :tests ["test/tsukuru/kotoba/test_agent.cljc"
-          "test/tsukuru/murakumo_test.cljc"]}
+  :tests ["test/tsukuru/kotoba/test_agent.kotoba"
+          "test/tsukuru/murakumo_test.kotoba"]}
  :pruned #{:go :tinygo :shell :legacy-python-agent}
  :root/cleanup
  ["20-actors/tsukuru"
