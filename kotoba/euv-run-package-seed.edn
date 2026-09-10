@@ -1,7 +1,7 @@
 ;; tsukuru 作 — EUV run-package seed (kotoba-native, R0, NEW). Same worked-example framing
 ;; as kotoba/cnt-run-package-seed.edn / kotoba/seed.edn: a genuine (not fabricated) EUV
 ;; run-package that reaches "ready" under `(agent/validate-run-package "euv" seed)`
-;; (src/tsukuru/kotoba/agent.cljc): all 5 catalog steps present (kotoba/
+;; (src/tsukuru/kotoba/agent.kotoba): all 5 catalog steps present (kotoba/
 ;; euv-process-catalog.edn), technologyNodeNm/waferDiameterMm/numericalAperture all
 ;; numeric, and a CAD/CAM handoff format recorded because a supplier exchange (supplierDid)
 ;; is referenced. String-keyed to match agent.cljc's plain-map idiom directly. No

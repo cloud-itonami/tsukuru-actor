@@ -1,5 +1,5 @@
 ;; tsukuru 作 — curated heuristic dual-use/export-control category snapshot. Documented/
-;; reviewable data source for `screen-export-control` in src/tsukuru/kotoba/agent.cljc —
+;; reviewable data source for `screen-export-control` in src/tsukuru/kotoba/agent.kotoba —
 ;; the .cljc embeds this same data as a Clojure literal (EXPORT-CONTROL-CATEGORIES) so the
 ;; actor stays IO-free / portable to cljs+WASM (no runtime file read, no new deps). Keep
 ;; the two in sync by hand when editing either one.
