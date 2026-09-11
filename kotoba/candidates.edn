@@ -315,7 +315,7 @@
 ;; despite 40+ individual duplicate/near-duplicate picks caught and dropped along the way.
 ;; See kotoba/validate_candidates.bb (batch 4), kotoba/coverage_report.bb (batch 8 — prints the
 ;; per-country/per-ISIC breakdown used to plan each batch, so future passes don't need to
-;; hand-run ad hoc bb -e queries) and .github/workflows/validate-candidates.yml (batch 5,
+;; hand-run ad hoc kbb -e queries) and .github/workflows/validate-candidates.yml (batch 5,
 ;; fixed in the batch-5 PR after the first CI run failed on a nonexistent
 ;; babashka/setup-babashka action — now uses the official install script) for the automated
 ;; consistency check and its CI enforcement.

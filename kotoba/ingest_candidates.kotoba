@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; tsukuru 作る — ingest candidates.edn into a live kotoba node, in a SEPARATE graph
 ;; from the consented/onboarded member registry (seed.edn → com.etzhayyim.tsukuru).
 ;; ADR-2605202800.
