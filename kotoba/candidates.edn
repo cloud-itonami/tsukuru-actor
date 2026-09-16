@@ -14613,4 +14613,245 @@
 ;; C33-pure-MRO candidates and no sensitive/combat-vessel exclusions needed. 2135 ->
 ;; 2166 companies, 108 countries, 23 ISIC divisions.
 ;; Running total: 2166 companies / 108 countries / 23 ISIC divisions, zero duplicate DIDs.
+ {:factory/did "candidate:manufacturer-directory/jp/subaru"
+  :factory/display-name "Subaru Corporation"
+  :factory/country "JP"
+  :factory/isic "C29"
+  :factory/capabilities [automobiles boxer-engines awd-drivetrains]
+  :factory/source-url "https://en.wikipedia.org/wiki/Subaru"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/yamaha-motor"
+  :factory/display-name "Yamaha Motor Co., Ltd."
+  :factory/country "JP"
+  :factory/isic "C29"
+  :factory/capabilities [motorcycles outboard-motors motorboats semiconductor-manufacturing-equipment]
+  :factory/source-url "https://en.wikipedia.org/wiki/Yamaha_Motor_Company"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/hitachi-zosen"
+  :factory/display-name "Kanadevia Corporation (Hitachi Zosen)"
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities [waste-treatment-plants industrial-machinery tunnel-boring-machines marine-engines steel-structures]
+  :factory/source-url "https://en.wikipedia.org/wiki/Hitachi_Zosen"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/nabtesco"
+  :factory/display-name "Nabtesco Corporation"
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities [cycloidal-drives precision-gearboxes robotics-joints railway-brakes platform-screen-doors]
+  :factory/source-url "https://en.wikipedia.org/wiki/Nabtesco"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/ntn-corporation"
+  :factory/display-name "NTN Corporation"
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities [bearings constant-velocity-joints friction-reducing-components]
+  :factory/source-url "https://en.wikipedia.org/wiki/NTN_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/lixil"
+  :factory/display-name "LIXIL Corporation"
+  :factory/country "JP"
+  :factory/isic "C23"
+  :factory/capabilities [building-materials housing-equipment plumbing-fixtures]
+  :factory/source-url "https://en.wikipedia.org/wiki/Lixil"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/daihatsu"
+  :factory/display-name "Daihatsu Motor Co., Ltd."
+  :factory/country "JP"
+  :factory/isic "C29"
+  :factory/capabilities [kei-cars compact-automobiles]
+  :factory/source-url "https://en.wikipedia.org/wiki/Daihatsu"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/yanmar"
+  :factory/display-name "Yanmar Holdings Co., Ltd."
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities [diesel-engines agricultural-machinery construction-equipment generator-sets]
+  :factory/source-url "https://en.wikipedia.org/wiki/Yanmar"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/okuma"
+  :factory/display-name "Okuma Corporation"
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities [cnc-machine-tools cnc-lathes machining-centers servomotors]
+  :factory/source-url "https://en.wikipedia.org/wiki/Okuma_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/makino"
+  :factory/display-name "Makino Milling Machine Co., Ltd."
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities [machine-tools milling-machines machining-centers]
+  :factory/source-url "https://en.wikipedia.org/wiki/Makino"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/heiwa"
+  :factory/display-name "Heiwa Corporation"
+  :factory/country "JP"
+  :factory/isic "C32"
+  :factory/capabilities [pachinko-machines pachislot-machines amusement-equipment]
+  :factory/source-url "https://en.wikipedia.org/wiki/Heiwa_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/shinano-kenshi"
+  :factory/display-name "Shinano Kenshi Co., Ltd."
+  :factory/country "JP"
+  :factory/isic "C28"
+  :factory/capabilities [fan-motors precision-motors spun-silk-yarn audio-equipment]
+  :factory/source-url "https://en.wikipedia.org/wiki/Shinano_Kenshi"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/schott-ag"
+  :factory/display-name "SCHOTT AG"
+  :factory/country "DE"
+  :factory/isic "C23"
+  :factory/capabilities [specialty-glass glass-ceramics borosilicate-glass pharmaceutical-glass-packaging]
+  :factory/source-url "https://en.wikipedia.org/wiki/SCHOTT"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/herrenknecht"
+  :factory/display-name "Herrenknecht AG"
+  :factory/country "DE"
+  :factory/isic "C28"
+  :factory/capabilities [tunnel-boring-machines heavy-tbm]
+  :factory/source-url "https://en.wikipedia.org/wiki/Herrenknecht"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/deutz"
+  :factory/display-name "DEUTZ AG"
+  :factory/country "DE"
+  :factory/isic "C28"
+  :factory/capabilities [diesel-engines gas-engines industrial-powertrains]
+  :factory/source-url "https://en.wikipedia.org/wiki/Deutz_AG"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/srf-limited"
+  :factory/display-name "SRF Limited"
+  :factory/country "IN"
+  :factory/isic "C20"
+  :factory/capabilities [fluorochemicals specialty-chemicals packaging-films technical-textiles]
+  :factory/source-url "https://en.wikipedia.org/wiki/SRF_Limited"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/tr/limak"
+  :factory/display-name "Limak Holding A.S."
+  :factory/country "TR"
+  :factory/isic "C23"
+  :factory/capabilities [cement construction-materials energy-infrastructure]
+  :factory/source-url "https://en.wikipedia.org/wiki/Limak_Holding"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/nl/royal-ihc"
+  :factory/display-name "Royal IHC"
+  :factory/country "NL"
+  :factory/isic "C30"
+  :factory/capabilities [dredging-vessels offshore-ships shipbuilding]
+  :factory/source-url "https://en.wikipedia.org/wiki/Royal_IHC"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/be/vyncke"
+  :factory/display-name "Vyncke NV"
+  :factory/country "BE"
+  :factory/isic "C28"
+  :factory/capabilities [biomass-energy-plants industrial-boilers waste-to-energy-equipment]
+  :factory/source-url "https://en.wikipedia.org/wiki/Vyncke"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/at/palfinger"
+  :factory/display-name "PALFINGER AG"
+  :factory/country "AT"
+  :factory/isic "C28"
+  :factory/capabilities [hydraulic-loader-cranes truck-mounted-cranes lifting-equipment]
+  :factory/source-url "https://en.wikipedia.org/wiki/Palfinger"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/mx/grupo-lala"
+  :factory/display-name "Grupo Lala"
+  :factory/country "MX"
+  :factory/isic "C10"
+  :factory/capabilities [dairy-products milk-processing food-processing]
+  :factory/source-url "https://en.wikipedia.org/wiki/Grupo_Lala"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/ke/bidco-africa"
+  :factory/display-name "Bidco Africa"
+  :factory/country "KE"
+  :factory/isic "C10"
+  :factory/capabilities [edible-oils fats margarine detergents personal-care-products]
+  :factory/source-url "https://en.wikipedia.org/wiki/Bidco_Africa"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/ng/dangote-group"
+  :factory/display-name "Dangote Group"
+  :factory/country "NG"
+  :factory/isic "C10"
+  :factory/capabilities [sugar-refining flour-milling pasta-production cement salt-refining]
+  :factory/source-url "https://en.wikipedia.org/wiki/Dangote_Group"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/kr/dl-group"
+  :factory/display-name "DL Holdings Co., Ltd."
+  :factory/country "KR"
+  :factory/isic "C20"
+  :factory/capabilities [chemicals construction-materials industrial-materials]
+  :factory/source-url "https://en.wikipedia.org/wiki/DL_Group"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/bd/grameen-danone"
+  :factory/display-name "Grameen Danone Foods Ltd."
+  :factory/country "BD"
+  :factory/isic "C10"
+  :factory/capabilities [fortified-yogurt dairy-nutrition-products]
+  :factory/source-url "https://en.wikipedia.org/wiki/Grameen_Danone"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/bd/beximco"
+  :factory/display-name "BEXIMCO (Bangladesh Export Import Company)"
+  :factory/country "BD"
+  :factory/isic "C13"
+  :factory/capabilities [textiles readymade-garments pharmaceuticals-raw-materials]
+  :factory/source-url "https://en.wikipedia.org/wiki/Beximco"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/lk/hayleys"
+  :factory/display-name "Hayleys PLC"
+  :factory/country "LK"
+  :factory/isic "C10"
+  :factory/capabilities [tea-processing rubber-products food-exports consumer-goods-manufacturing]
+  :factory/source-url "https://en.wikipedia.org/wiki/Hayleys"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/hk/vitasoy"
+  :factory/display-name "Vitasoy International Holdings Limited"
+  :factory/country "HK"
+  :factory/isic "C11"
+  :factory/capabilities [soy-milk-beverages juices beverages plant-based-drinks]
+  :factory/source-url "https://en.wikipedia.org/wiki/Vitasoy"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/ph/universal-robina"
+  :factory/display-name "Universal Robina Corporation"
+  :factory/country "PH"
+  :factory/isic "C10"
+  :factory/capabilities [snackfoods beverages packaged-food agro-industrial-products]
+  :factory/source-url "https://en.wikipedia.org/wiki/Universal_Robina"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/za/bidvest"
+  :factory/display-name "Bidvest Group Limited"
+  :factory/country "ZA"
+  :factory/isic "C10"
+  :factory/capabilities [food-processing packaged-food industrial-services]
+  :factory/source-url "https://en.wikipedia.org/wiki/Bidvest"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/sg/olam-group"
+  :factory/display-name "Olam Group (Olam International)"
+  :factory/country "SG"
+  :factory/isic "C10"
+  :factory/capabilities [cocoa-processing coffee-processing rice-milling cotton-processing food-ingredients]
+  :factory/source-url "https://en.wikipedia.org/wiki/Olam_International"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/sg/fraser-neave"
+  :factory/display-name "Fraser & Neave"
+  :factory/country "SG"
+  :factory/isic "C11"
+  :factory/capabilities [beverages dairy-products soft-drinks]
+  :factory/source-url "https://en.wikipedia.org/wiki/Fraser_%26_Neave"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+;; Batch 60 (/loop pass 60): +32 companies, +0 new countries — per the header's
+;; default-to-economy-depth guidance. JP +12 (passenger cars, motorcycles/outboards,
+;; plant-engineering/TBM, precision gearboxes, bearings, building materials, kei cars,
+;; diesel/agri engines, CNC machine tools x2, pachinko machines, precision motors —
+;; industries not previously covered for JP), DE +3 (specialty glass, TBMs, industrial
+;; engines vs. existing chemicals/forklifts/aero-engines), IN +1 (fluorochemicals/
+;; specialty chemicals vs. existing steel/cement/petrochemicals/pharma/auto/food).
+;; Second/third entries for 13 already-listed countries: TR (cement), NL (dredging
+;; shipbuilding), BE (biomass boilers), AT (loader cranes), MX (dairy), KE (edible
+;; oils), NG (sugar/flour conglomerate), KR (chemicals), BD (fortified yogurt,
+;; conglomerate textiles), LK (tea/rubber), HK (soy beverages), PH (packaged food),
+;; ZA (food services), SG (cocoa/coffee processing, beverages). All 32 are real
+;; companies with Wikipedia pages fetched in this run (all HTTP 200) with country
+;; and industry verified from page text; DIDs grep-checked against the merged file
+;; before appending (one pre-append duplicate caught and dropped: Square
+;; Pharmaceuticals). 2166 -> 2198 companies, 108 countries, 23 ISIC divisions.
+;; Running total: 2198 companies / 108 countries / 23 ISIC divisions, zero duplicate DIDs.
 ]
