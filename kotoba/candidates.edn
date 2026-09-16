@@ -14837,6 +14837,70 @@
   :factory/capabilities [beverages dairy-products soft-drinks]
   :factory/source-url "https://en.wikipedia.org/wiki/Fraser_%26_Neave"
   :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/fujifilm"
+  :factory/display-name "Fujifilm Holdings Corporation"
+  :factory/country "JP"
+  :factory/isic "C26"
+  :factory/capabilities ["photographic-materials" "medical-imaging-equipment" "optical-films-and-devices" "biologics-contract-manufacturing"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Fujifilm"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/sumitomo-electric-industries"
+  :factory/display-name "Sumitomo Electric Industries, Ltd."
+  :factory/country "JP"
+  :factory/isic "C27"
+  :factory/capabilities ["electric-wire-and-cable" "optical-fiber" "automotive-wiring-harnesses" "composite-semiconductors"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Sumitomo_Electric_Industries"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/suedzucker"
+  :factory/display-name "Südzucker AG"
+  :factory/country "DE"
+  :factory/isic "C10"
+  :factory/capabilities ["sugar-production" "starch" "fruit-preparations" "bioethanol"]
+  :factory/source-url "https://en.wikipedia.org/wiki/S%C3%BCdzucker"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/jenoptik"
+  :factory/display-name "Jenoptik AG"
+  :factory/country "DE"
+  :factory/isic "C26"
+  :factory/capabilities ["photonics" "laser-systems" "precision-optics" "industrial-metrology"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Jenoptik"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/whirlpool-corporation"
+  :factory/display-name "Whirlpool Corporation"
+  :factory/country "US"
+  :factory/isic "C28"
+  :factory/capabilities ["home-appliances" "laundry-equipment" "refrigerators" "cooking-appliances"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Whirlpool_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/maruti-suzuki"
+  :factory/display-name "Maruti Suzuki India Limited"
+  :factory/country "IN"
+  :factory/isic "C29"
+  :factory/capabilities ["passenger-vehicles" "small-cars" "automotive-parts"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Maruti_Suzuki"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/voltas"
+  :factory/display-name "Voltas Limited"
+  :factory/country "IN"
+  :factory/isic "C28"
+  :factory/capabilities ["air-conditioners" "commercial-refrigeration" "air-coolers" "water-dispensers"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Voltas"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/wuliangye-yibin"
+  :factory/display-name "Wuliangye Yibin Co., Ltd."
+  :factory/country "CN"
+  :factory/isic "C11"
+  :factory/capabilities ["baijiu-distilling" "spirits-production" "beverage-production"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Wuliangye_Yibin"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cr/dos-pinos"
+  :factory/display-name "Cooperativa de Productores de Leche Dos Pinos R.L."
+  :factory/country "CR"
+  :factory/isic "C10"
+  :factory/capabilities ["dairy-processing" "beverages" "candy-confectionery"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Dos_Pinos"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
 ;; Batch 60 (/loop pass 60): +32 companies, +0 new countries — per the header's
 ;; default-to-economy-depth guidance. JP +12 (passenger cars, motorcycles/outboards,
 ;; plant-engineering/TBM, precision gearboxes, bearings, building materials, kei cars,
@@ -14854,4 +14918,15 @@
 ;; before appending (one pre-append duplicate caught and dropped: Square
 ;; Pharmaceuticals). 2166 -> 2198 companies, 108 countries, 23 ISIC divisions.
 ;; Running total: 2198 companies / 108 countries / 23 ISIC divisions, zero duplicate DIDs.
+;; Batch 61 (/loop pass 61): +9 companies, +0 new countries. Budget-constrained pass
+;; (run-time limit hit mid-verification) that stayed inside the economy-depth default
+;; of the header guidance: JP +2 (imaging/optical + electric wire/optical fiber,
+;; industries not previously covered for JP), DE +2 (sugar/food processing,
+;; optoelectronics/photonics), US +1 (home appliances), IN +2 (passenger vehicles,
+;; air conditioning), CN +1 (baijiu spirits), plus CR +1 (dairy cooperative) for a
+;; thin-country gap (CR had 1 entry). All 9 are real companies with Wikipedia pages
+;; fetched in this run (all returned HTTP 200) with country and industry verified from
+;; page text; DIDs grep-checked against the merged file before appending (zero
+;; duplicates). 2198 -> 2207 companies, 108 countries, 23 ISIC divisions.
+;; Running total: 2207 companies / 108 countries / 23 ISIC divisions, zero duplicate DIDs.
 ]
