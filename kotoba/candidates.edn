@@ -14929,4 +14929,83 @@
 ;; page text; DIDs grep-checked against the merged file before appending (zero
 ;; duplicates). 2198 -> 2207 companies, 108 countries, 23 ISIC divisions.
 ;; Running total: 2207 companies / 108 countries / 23 ISIC divisions, zero duplicate DIDs.
+ {:factory/did "candidate:manufacturer-directory/jp/omron"
+ :factory/display-name "Omron Corporation"
+ :factory/country "jp"
+ :factory/isic "C26"
+ :factory/capabilities ["industrial automation components" "industrial robots" "sensors and relays" "medical devices"]
+ :factory/source-url "https://en.wikipedia.org/wiki/Omron"
+ :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+ {:factory/did "candidate:manufacturer-directory/jp/yokogawa-electric"
+ :factory/display-name "Yokogawa Electric Corporation"
+ :factory/country "jp"
+ :factory/isic "C26"
+ :factory/capabilities ["industrial measurement and control instruments" "distributed control systems" "flowmeters and pressure transmitters"]
+ :factory/source-url "https://en.wikipedia.org/wiki/Yokogawa_Electric"
+ :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+ {:factory/did "candidate:manufacturer-directory/de/knorr-bremse"
+ :factory/display-name "Knorr-Bremse AG"
+ :factory/country "de"
+ :factory/isic "C30"
+ :factory/capabilities ["rail braking systems" "commercial-vehicle braking systems" "rail door systems and air conditioning"]
+ :factory/source-url "https://en.wikipedia.org/wiki/Knorr-Bremse"
+ :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+ {:factory/did "candidate:manufacturer-directory/it/iveco"
+ :factory/display-name "Iveco Group N.V."
+ :factory/country "it"
+ :factory/isic "C29"
+ :factory/capabilities ["light and medium commercial vehicles" "heavy trucks" "buses and industrial engines"]
+ :factory/source-url "https://en.wikipedia.org/wiki/Iveco"
+ :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+ {:factory/did "candidate:manufacturer-directory/us/paccar"
+ :factory/display-name "Paccar Inc."
+ :factory/country "us"
+ :factory/isic "C29"
+ :factory/capabilities ["heavy-duty trucks (Kenworth, Peterbilt, DAF)" "truck powertrains and axles" "industrial winches"]
+ :factory/source-url "https://en.wikipedia.org/wiki/Paccar"
+ :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+ {:factory/did "candidate:manufacturer-directory/us/amphenol"
+ :factory/display-name "Amphenol Corporation"
+ :factory/country "us"
+ :factory/isic "C26"
+ :factory/capabilities ["electronic connectors" "fiber-optic connectors and cable" "interconnect systems"]
+ :factory/source-url "https://en.wikipedia.org/wiki/Amphenol"
+ :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+ {:factory/did "candidate:manufacturer-directory/cn/comac"
+ :factory/display-name "Commercial Aircraft Corporation of China (COMAC)"
+ :factory/country "cn"
+ :factory/isic "C30"
+ :factory/capabilities ["civil passenger aircraft (C919, C909)" "aircraft design and assembly"]
+ :factory/source-url "https://en.wikipedia.org/wiki/Comac"
+ :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+ {:factory/did "candidate:manufacturer-directory/in/tube-investments-of-india"
+ :factory/display-name "Tube Investments of India Limited"
+ :factory/country "in"
+ :factory/isic "C28"
+ :factory/capabilities ["steel tubes and metal formed products" "bicycles" "automotive chains and gears"]
+ :factory/source-url "https://en.wikipedia.org/wiki/Tube_Investments_of_India"
+ :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+;; Batch 62 (/loop pass 62): +8 companies, +0 new countries. Economy-depth pass:
+;; JP +2 (industrial automation/electronic components via Omron; industrial
+;; measurement/control instrumentation via Yokogawa Electric), DE +1 (rail and
+;; commercial-vehicle braking systems via Knorr-Bremse), IT +1 (commercial
+;; vehicles via Iveco), US +2 (heavy-duty trucks via PACCAR; electronic and
+;; fiber-optic connectors via Amphenol), CN +1 (civil aircraft via COMAC),
+;; IN +1 (steel tubes/bicycles/chains via Tube Investments of India). All 8 are
+;; real companies with Wikipedia pages fetched in this run (all returned
+;; content with country and industry verified from page text); the only
+;; country-gap candidate attempted this run (Cimentos de Mocambique, MZ) could
+;; not be verified because its Wikipedia fetch failed (HTTP 429) and search
+;; snippets are not acceptable evidence, so the run stayed inside the
+;; economy-depth default. DIDs grep-checked against the merged file before
+;; appending (zero duplicates). 2207 -> 2215 companies, 108 countries,
+;; 23 ISIC divisions.
+;; Running total: 2215 companies / 108 countries / 23 ISIC divisions, zero duplicate DIDs.
 ]
