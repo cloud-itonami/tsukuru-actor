@@ -15008,4 +15008,95 @@
 ;; appending (zero duplicates). 2207 -> 2215 companies, 108 countries,
 ;; 23 ISIC divisions.
 ;; Running total: 2215 companies / 108 countries / 23 ISIC divisions, zero duplicate DIDs.
+
+ {:factory/did "candidate:manufacturer-directory/jp/nitto-denko"
+  :factory/display-name "Nitto Denko Corporation"
+  :factory/country "JP"
+  :factory/isic "C26"
+  :factory/capabilities ["adhesive-tapes" "optical-films" "semiconductor-encapsulants" "separation-membranes"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Nitto_Denko"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/jfe-steel"
+  :factory/display-name "JFE Steel Corporation"
+  :factory/country "JP"
+  :factory/isic "C24"
+  :factory/capabilities ["flat-steel" "hot-rolled-sheet" "electrogalvanized-steel" "steel-pipes"]
+  :factory/source-url "https://en.wikipedia.org/wiki/JFE_Steel"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/kikkoman"
+  :factory/display-name "Kikkoman Corporation"
+  :factory/country "JP"
+  :factory/isic "C10"
+  :factory/capabilities ["soy-sauce" "food-seasonings" "mirin" "beverages"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Kikkoman"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/kaercher"
+  :factory/display-name "Alfred Kärcher SE & Co. KG"
+  :factory/country "DE"
+  :factory/isic "C28"
+  :factory/capabilities ["high-pressure-cleaners" "cleaning-equipment" "municipal-sweepers" "vacuums"]
+  :factory/source-url "https://en.wikipedia.org/wiki/K%C3%A4rcher"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/heidelberg-materials"
+  :factory/display-name "Heidelberg Materials"
+  :factory/country "DE"
+  :factory/isic "C23"
+  :factory/capabilities ["cement" "aggregates" "ready-mixed-concrete" "asphalt"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Heidelberg_Materials"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/zoomlion"
+  :factory/display-name "Zoomlion Heavy Industry Science and Technology Co., Ltd."
+  :factory/country "CN"
+  :factory/isic "C28"
+  :factory/capabilities ["construction-machinery" "cranes" "concrete-pumps" "agricultural-machinery"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Zoomlion"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/parker-hannifin"
+  :factory/display-name "Parker-Hannifin Corporation"
+  :factory/country "US"
+  :factory/isic "C28"
+  :factory/capabilities ["motion-control" "hydraulics" "pneumatics" "aerospace-fluid-systems" "filtration"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Parker_Hannifin"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/ppg-industries"
+  :factory/display-name "PPG Industries, Inc."
+  :factory/country "US"
+  :factory/isic "C20"
+  :factory/capabilities ["paints" "coatings" "specialty-materials" "aerospace-coatings"]
+  :factory/source-url "https://en.wikipedia.org/wiki/PPG_Industries"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/hormel-foods"
+  :factory/display-name "Hormel Foods Corporation"
+  :factory/country "US"
+  :factory/isic "C10"
+  :factory/capabilities ["meat-processing" "canned-foods" "snack-foods" "peanut-butter"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Hormel"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/mz/cervejas-de-mocambique"
+  :factory/display-name "Cervejas de Moçambique (CDM)"
+  :factory/country "MZ"
+  :factory/isic "C11"
+  :factory/capabilities ["beer-brewing" "cassava-beer" "beverage-production"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Cervejas_de_Mo%C3%A7ambique"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+
+;; Batch 63 (/loop pass 63): +10 companies, +0 new countries. Economy-depth pass on
+;; the six largest economies per the header's default-to-economy-depth guidance:
+;; JP +3 (functional films/polarizers — Nitto Denko; flat steel — JFE Steel;
+;; soy sauce/food — Kikkoman, industries not previously covered for JP), DE +2
+;; (cleaning equipment — Kärcher; cement/aggregates — Heidelberg Materials, the
+;; first DE cement entry), CN +2 (construction/agricultural machinery — Zoomlion;
+;; a Midea Group parent entry was found already on main and dropped at write
+;; time), US +3 (motion control — Parker Hannifin;
+;; paints & coatings — PPG; meat/food processing — Hormel). Plus one
+;; CN +1 (construction/agricultural machinery — Zoomlion). Plus one
+;; thin-country-gap entry: MZ +1 (Cervejas de Moçambique — MZ previously had only
+;; a single entry; the FIFCO analogue in CR was already listed, so no CR addition
+;; this pass). Six candidates (Sartorius, Shimadzu, Emerson Electric, Asian
+;; Paints, Ashok Leyland, De'Longhi) were already present on main from batches
+;; 61-62 and were dropped at write time by DID dedupe. All 10 are real companies
+;; with Wikipedia pages fetched in this run (all returned HTTP 200). 2215 -> 2225
+;; companies, 108 countries, 23 ISIC divisions.
+;; Running total: 2225 companies / 108 countries / 23 ISIC divisions, zero
+;; duplicate DIDs.
 ]
