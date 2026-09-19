@@ -15099,4 +15099,67 @@
 ;; companies, 108 countries, 23 ISIC divisions.
 ;; Running total: 2225 companies / 108 countries / 23 ISIC divisions, zero
 ;; duplicate DIDs.
+;; Batch 64 (2026-09-20, tsukuru-scout): +9 entries 2225 -> 2234. Split: 3
+;; economy-depth (US Lincoln Electric, CN Shanghai Electric, IN Escorts Kubota)
+;; + 6 country-gap firsts (BO YPFB, VE Empresas Polar, AO Sonangol, MU Omnicane,
+;; ME Plantaže, MD Purcari Wineries). All 9 are real companies whose Wikipedia
+;; pages were fetched in this run (all returned content; the SEW-Eurodrive and
+;; Kombinat aluminijuma Podgorica attempts failed and were dropped). Countries
+;; 108 -> 114. 2234 companies, 114 countries, 23 ISIC divisions.
+;; Running total: 2234 companies / 114 countries / 23 ISIC divisions, zero
+;; duplicate DIDs.
+{:factory/did "candidate:manufacturer-directory/us/lincoln-electric"
+  :factory/display-name "Lincoln Electric Holdings, Inc."
+  :factory/country "US" :factory/isic "C28"
+  :factory/capabilities ["arc-welding-equipment" "welding-consumables" "additive-manufacturing" "electric-motors"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Lincoln_Electric"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/shanghai-electric"
+  :factory/display-name "Shanghai Electric Group Company Limited"
+  :factory/country "CN" :factory/isic "C28"
+  :factory/capabilities ["power-generation-equipment" "steam-turbines" "wind-turbines" "power-transmission-equipment"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Shanghai_Electric"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/escorts-kubota"
+  :factory/display-name "Escorts Kubota Limited"
+  :factory/country "IN" :factory/isic "C28"
+  :factory/capabilities ["agricultural-machinery" "tractors" "construction-equipment" "railway-equipment"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Escorts_Kubota_Limited"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/bo/ypfb"
+  :factory/display-name "Yacimientos Petrolíferos Fiscales Bolivianos (YPFB)"
+  :factory/country "BO" :factory/isic "C19"
+  :factory/capabilities ["petroleum-refining" "natural-gas-industrialization" "refined-fuel-production"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Yacimientos_Petrol%C3%ADferos_Fiscales_Bolivianos"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/ve/empresas-polar"
+  :factory/display-name "Empresas Polar"
+  :factory/country "VE" :factory/isic "C11"
+  :factory/capabilities ["beer-brewing" "food-processing" "beverage-manufacturing"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Empresas_Polar"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/ao/sonangol"
+  :factory/display-name "Sonangol E.P. (Sociedade Nacional de Combustíveis de Angola)"
+  :factory/country "AO" :factory/isic "C19"
+  :factory/capabilities ["oil-refining" "petroleum-products" "lubricants-production"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Sonangol_Group"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/mu/omnicane"
+  :factory/display-name "Omnicane Limited"
+  :factory/country "MU" :factory/isic "C10"
+  :factory/capabilities ["sugar-milling" "refined-sugar-production" "bioethanol-production" "cogeneration"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Omnicane"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/me/plantaze"
+  :factory/display-name "AD Plantaže 13. jul"
+  :factory/country "ME" :factory/isic "C11"
+  :factory/capabilities ["wine-production" "grape-brandy-distillation" "viticulture"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Planta%C5%BEe"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/md/purcari-wineries"
+  :factory/display-name "Purcari Wineries LLC"
+  :factory/country "MD" :factory/isic "C11"
+  :factory/capabilities ["wine-production" "viticulture" "sparkling-wine-production"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Purcari_(winery)"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
 ]
