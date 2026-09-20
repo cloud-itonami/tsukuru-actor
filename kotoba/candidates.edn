@@ -15162,4 +15162,63 @@
   :factory/capabilities ["wine-production" "viticulture" "sparkling-wine-production"]
   :factory/source-url "https://en.wikipedia.org/wiki/Purcari_(winery)"
   :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+;; Batch 65 (2026-09-21, tsukuru-scout): +9 entries 2234 -> 2243. Split: 6
+;; economy-depth (FR Saint-Gobain C23, IT Marcegaglia C24, CN Hisense Group C26, US
+;; DuPont C20, JP Canon C26, KR LG Corporation C26) + 3 country gaps (NE Chaudhary Group
+;; C11, BY BelAZ C29, UA Azovstal C24). 114 -> 117 countries.
+;; Running total: 2243 companies / 117 countries / 23 ISIC divisions, zero duplicate DIDs.
+ {:factory/did "candidate:manufacturer-directory/fr/saint-gobain"
+  :factory/display-name "Compagnie de Saint-Gobain S.A. (Saint-Gobain)"
+  :factory/country "FR" :factory/isic "C23"
+  :factory/capabilities ["construction-materials" "glass-manufacturing" "plasterboard-manufacturing"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Saint-Gobain"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/it/marcegaglia"
+  :factory/display-name "Marcegaglia S.p.A."
+  :factory/country "IT" :factory/isic "C24"
+  :factory/capabilities ["steel-rolling" "flat-steel-products" "long-steel-products"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Marcegaglia"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/hisense-group"
+  :factory/display-name "Hisense Group Co., Ltd."
+  :factory/country "CN" :factory/isic "C26"
+  :factory/capabilities ["television-manufacturing" "major-appliance-manufacturing" "electronics"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Hisense"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/dupont"
+  :factory/display-name "DuPont de Nemours, Inc."
+  :factory/country "US" :factory/isic "C20"
+  :factory/capabilities ["specialty-chemicals" "materials-science" "industrial-materials-manufacturing"]
+  :factory/source-url "https://en.wikipedia.org/wiki/DuPont_de_Nemours"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/canon"
+  :factory/display-name "Canon Inc."
+  :factory/country "JP" :factory/isic "C26"
+  :factory/capabilities ["optical-imaging-equipment" "printer-manufacturing" "semiconductor-equipment"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Canon_Inc."
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/kr/lg-corporation"
+  :factory/display-name "LG Corporation (LG Group)"
+  :factory/country "KR" :factory/isic "C26"
+  :factory/capabilities ["consumer-electronics" "home-appliance-manufacturing" "telecommunications-equipment"]
+  :factory/source-url "https://en.wikipedia.org/wiki/LG_Corporation"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/ne/chaudhary-group"
+  :factory/display-name "Chaudhary Group"
+  :factory/country "NE" :factory/isic "C11"
+  :factory/capabilities ["beer-brewing" "beverage-manufacturing" "food-processing"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Chaudhary_Group"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/by/belaz"
+  :factory/display-name "BelAZ (Belarusian Automobile Plant)"
+  :factory/country "BY" :factory/isic "C29"
+  :factory/capabilities ["mining-dump-trucks" "heavy-equipment-manufacturing" "off-highway-vehicles"]
+  :factory/source-url "https://en.wikipedia.org/wiki/BelAZ"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/ua/azovstal"
+  :factory/display-name "Azovstal Iron and Steel Works (Metinvest)"
+  :factory/country "UA" :factory/isic "C24"
+  :factory/capabilities ["steel-rolling" "steel-sheets" "long-steel-products"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Azovstal_Iron_and_Steel_Works"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
 ]
