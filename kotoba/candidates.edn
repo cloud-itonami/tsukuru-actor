@@ -15221,4 +15221,92 @@
   :factory/capabilities ["steel-rolling" "steel-sheets" "long-steel-products"]
   :factory/source-url "https://en.wikipedia.org/wiki/Azovstal_Iron_and_Steel_Works"
   :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/makita"
+  :factory/display-name "Makita Corporation"
+  :factory/country "JP" :factory/isic "C28"
+  :factory/capabilities ["power-tools" "cordless-tools" "outdoor-power-equipment"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Makita"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/jp/horiba"
+  :factory/display-name "HORIBA, Ltd."
+  :factory/country "JP" :factory/isic "C26"
+  :factory/capabilities ["measurement-instruments" "automotive-emission-analyzers" "semiconductor-metrology"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Horiba"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/us/timken-company"
+  :factory/display-name "The Timken Company"
+  :factory/country "US" :factory/isic "C28"
+  :factory/capabilities ["bearings" "industrial-motion-products" "power-transmission-components"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Timken_Company"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/sick-ag"
+  :factory/display-name "SICK AG"
+  :factory/country "DE" :factory/isic "C26"
+  :factory/capabilities ["industrial-sensors" "safety-laser-scanners" "factory-automation-sensor-systems"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Sick_AG"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/de/wilo"
+  :factory/display-name "WILO SE"
+  :factory/country "DE" :factory/isic "C28"
+  :factory/capabilities ["pumps" "pump-systems" "building-technology-water-solutions"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Wilo"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/in/tvs-motor-company"
+  :factory/display-name "TVS Motor Company Limited"
+  :factory/country "IN" :factory/isic "C29"
+  :factory/capabilities ["motorcycles" "scooters" "three-wheelers"]
+  :factory/source-url "https://en.wikipedia.org/wiki/TVS_Motor_Company"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cn/trina-solar"
+  :factory/display-name "Trina Solar Co., Ltd."
+  :factory/country "CN" :factory/isic "C27"
+  :factory/capabilities ["photovoltaic-modules" "solar-pv-manufacturing" "smart-energy-solutions"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Trina_Solar"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/it/datalogic"
+  :factory/display-name "Datalogic S.p.A."
+  :factory/country "IT" :factory/isic "C26"
+  :factory/capabilities ["barcode-readers" "industrial-automation-sensors" "machine-vision"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Datalogic"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/cd/gecamines"
+  :factory/display-name "La Generale des Carrieres et des Mines (Gecamines)"
+  :factory/country "CD" :factory/isic "C24"
+  :factory/capabilities ["copper-mining-and-processing" "cobalt-mining-and-processing" "base-metals"]
+  :factory/source-url "https://en.wikipedia.org/wiki/G%C3%A9camines"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/na/namibia-breweries"
+  :factory/display-name "Namibia Breweries Limited"
+  :factory/country "NA" :factory/isic "C11"
+  :factory/capabilities ["beer-brewing" "beverage-manufacturing" "soft-drinks-and-malt-beverages"]
+  :factory/source-url "https://en.wikipedia.org/wiki/Namibia_Breweries_Limited"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/om/oman-cables-industry"
+  :factory/display-name "Oman Cables Industry (SAOG)"
+  :factory/country "OM" :factory/isic "C27"
+  :factory/capabilities ["power-cables" "instrumentation-cables" "overhead-conductors"]
+  :factory/source-url "https://omancables.com/company-overview/overview"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/pa/cafe-duran"
+  :factory/display-name "Cafe Duran, S.A."
+  :factory/country "PA" :factory/isic "C10"
+  :factory/capabilities ["coffee-roasting-and-grinding" "instant-coffee" "tea-and-infusions"]
+  :factory/source-url "https://cafeduran.com/"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
+ {:factory/did "candidate:manufacturer-directory/bf/brakina"
+  :factory/display-name "BRAKINA (SODIBO, Brasseries du Burkina)"
+  :factory/country "BF" :factory/isic "C11"
+  :factory/capabilities ["beer-brewing" "soft-drinks" "malt-beverages"]
+  :factory/source-url "https://fr.wikipedia.org/wiki/Brakina"
+  :factory/labor-provenance :unknown :factory/sourcing :public-directory}
 ]
+;; Batch 66 (/loop pass 66): +13 companies, +5 new countries (CD OM NA PA BF —
+;; country-gap fill: DRC metals, Oman cables, Namibia brewing, Panama coffee
+;; processing, Burkina Faso brewing). Economy depth on the largest six: JP +2
+;; (Makita power tools, HORIBA precision instruments), DE +2 (SICK industrial
+;; sensors, WILO pumps), US +1 (Timken bearings), IN +1 (TVS Motor), CN +1
+;; (Trina Solar photovoltaics), IT +1 (Datalogic automation sensors). All 13
+;; are real companies verified via their Wikipedia pages (12) or company site
+;; (Oman Cables, Cafe Duran) fetched in this run. 2243 -> 2256 companies,
+;; 117 -> 122 countries, 23 ISIC divisions.
+;; Running total: 2256 companies / 122 countries / 23 ISIC divisions, zero duplicate DIDs.
