@@ -20,7 +20,7 @@
       "script": "scripts/tsukuru_evidence.py",
       "skill": null,
       "skills": [],
-      "workdir": "~/.hermes/profiles/tsukuru-scout"
+      "workdir": null
     }
   ]
 }
