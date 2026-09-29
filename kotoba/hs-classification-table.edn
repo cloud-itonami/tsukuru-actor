@@ -5,7 +5,7 @@
 ;; runtime file read, no new deps). Keep the two in sync by hand when editing either one.
 ;;
 ;; Scope: a SMALL curated snapshot covering tsukuru's actual manufacturing verticals per
-;; CLAUDE.md and manifest.edn — CNC/metal machining, aluminium/steel/
+;; AGENTS.md and manifest.edn — CNC/metal machining, aluminium/steel/
 ;; plastics articles, electronics/communication equipment, semiconductor devices,
 ;; EUV/optical-precision instruments (EUV vertical), CNT/carbon-fiber (CNT fiber
 ;; vertical), textiles, vehicle parts, radar/navigation. This is NOT an authoritative

@@ -14,7 +14,7 @@
 ;;    wired" pattern) ──
 ;; :factory/did values below use the placeholder pattern "factory/registry-seed/<slug>" — this is
 ;; DELIBERATELY NOT a did:web URI, and is DISTINCT from the live path-based factory DID scheme
-;; documented in CLAUDE.md (`did:web:tsukuru.etzhayyim.com/factory/<slug>`,
+;; documented in AGENTS.md (`did:web:tsukuru.etzhayyim.com/factory/<slug>`,
 ;; performerType=service — see also kotoba/seed.edn's :factory/did values, which DO use that live
 ;; scheme for its small fictional worked example). None of the real companies below have been
 ;; issued a did:web identity, on-chain registration, LEI, or wallet address by tsukuru — inventing
