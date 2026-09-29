@@ -123,8 +123,8 @@
 ;; total 464 companies / 94 countries / 23 ISIC divisions, zero duplicate DIDs. Country count
 ;; (94) already far exceeds the "30+ countries" reference from the same source. This is still
 ;; :sourcing :public-directory reference data, not the onboarded/live :factory registry — see
-;; the file header above and CLAUDE.md's Manufacturer Registry Rules — but the scale target
-;; that originally motivated the "460+" figure in manifest.edn/CLAUDE.md is now matched by real,
+;; the file header above and AGENTS.md's Manufacturer Registry Rules — but the scale target
+;; that originally motivated the "460+" figure in manifest.edn/AGENTS.md is now matched by real,
 ;; sourced, verifiable public-directory entries rather than an unverified legacy assumption.
 ;; Batch 14 (/loop pass 14): with the scale milestone passed, shifted weight from raw growth
 ;; toward maturity: kotoba/validate_candidates.bb gained a near-duplicate-display-name check

@@ -4,7 +4,7 @@
 
   ## Why this actor writes into someone else's ref
 
-  ADR-2800003200 Phase 2. CLAUDE.md's kotobase rule is that a Datalog
+  ADR-2800003200 Phase 2. AGENTS.md's kotobase rule is that a Datalog
   join reaches exactly one ref, so anything split across refs can never
   be joined again. A production order wants joining to three things this
   actor does not own:

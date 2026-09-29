@@ -20,7 +20,7 @@
   one. The credential is a document in the same ref; reading it is a
   query, not a call. That is the entire argument for one ref, and the
   cost — one writer lease per commit, throughput bounded by CAS
-  contention rather than capacity — is the one CLAUDE.md names.
+  contention rather than capacity — is the one AGENTS.md names.
 
   ## What this Worker refuses to become
 
