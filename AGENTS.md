@@ -137,3 +137,23 @@ etzhayyim deploy --smoke-url https://tsukr8u0.etzhayyim.com/health
 
 - Graph access must go through `G()` builder only.
 - Keep fallback behavior explicit and minimal when graph is unavailable.
+
+## CI/CD: no JVM / nbb (JUN-290, removed in JUN-717)
+
+Workspace rule (owner, 2026-10-22, JUN-290): JVM and nbb are not used, so CI/CD
+must not start setup-java, setup-clojure, clojure, nbb, babashka or GraalVM.
+Such workflows are deleted, not disabled or kept as a fallback. The canonical
+rule is the "CI/CD（CDCI）に JVM と nbb を置かない" section of the workspace
+`AGENTS.md` (canonical source: `com-junkawasaki/root/AGENTS.md`, "CDCI 停止中").
+
+- **Removed:** `.github/workflows/validate-candidates.yml` (job `validate`:
+  installed babashka via curl and ran
+  `bb kotoba/validate_candidates.bb kotoba/candidates.edn` on changes to
+  `kotoba/candidates.edn`). It was the only workflow in this repository.
+  The script it ran, `kotoba/validate_candidates.bb`, had already been
+  deleted in f6cdea1, so the workflow could not pass anyway.
+- **Native gate (Amu selfhost):** none. No Amu selfhost native gate with a
+  negative control validates `kotoba/candidates.edn`; recorded as blocked.
+- **No longer covered in CI:** validation of `kotoba/candidates.edn`
+  (duplicate-DID and near-duplicate display-name checks). Comments in
+  `kotoba/candidates.edn` still refer to the removed script and workflow.
